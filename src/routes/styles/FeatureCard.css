@@ -1,0 +1,9 @@
+.FeatureCard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	margin: 20px;
+	height: 30vh;
+	width: 22vw;
+}

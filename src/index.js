@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root, { rootLoader } from "./routes/root";
 import Error from "./routes/error";
 import Destination, { destinationLoader } from "./routes/destination";
-
 import "./index.css";
 import "@fontsource/roboto/300.css";
 
@@ -14,13 +13,13 @@ const router = createBrowserRouter([
     element: <Root />,
     loader: rootLoader,
     children: [],
-    // errorElement: <Error />,
+    errorElement: <Error />,
   },
   {
-    path: "/destinations/:destinationName",
+    path: "/destinations/:destinationId",
     element: <Destination />,
     loader: destinationLoader,
-    // errorElement: <Error />,
+    errorElement: <Error />,
   },
 ]);
 

@@ -24,8 +24,10 @@ export default function Root() {
 
   return (
     <div className="Root">
-      <Typography variant="h1">UpHost</Typography>
-      <Typography variant="h6 ">
+      <Typography style={{ margin: "10px" }} variant="h1">
+        UpHost
+      </Typography>
+      <Typography style={{ marginBottom: "20px" }} variant="h6 ">
         Your Gateway To Vacation Rental Data
       </Typography>
       <DestinationSelect
@@ -35,7 +37,7 @@ export default function Root() {
       />
 
       <Link to={`destinations/${destinationOptions[destination]}`}>
-        <Button variant="Text">Go</Button>
+        <Button variant="Outlined ">Go</Button>
       </Link>
     </div>
   );
